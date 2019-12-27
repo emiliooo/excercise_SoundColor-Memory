@@ -22,12 +22,13 @@ document.getElementById("btn_check").addEventListener("click", function () {
     }
 
     if (status == listsNumbersCard.length && listsNumbersCard.length == clickedList.length) {
-        alert('BRAWO !!!')
+         $(".modal-body").html("POPRAWNIE BRAWO !!");
+         $('#exampleModalLong').modal('show');
     } else {
-        alert('ZLE !!')
+        $(".modal-body").html("NIEPOPRAWNE !");
+        $('#exampleModalLong').modal('show');
     }
 });
-
 
 document.getElementById("list_box-card").addEventListener("click", function (event) {
     console.log(event.target.id);
@@ -39,7 +40,6 @@ document.getElementById("list_box-card").addEventListener("click", function (eve
         document.getElementById(event.target.id).style.opacity = 0.2
     }, 1000);
 });
-
 
 function action() {
     var random = Math.floor(Math.random() * (+max - +min) + +min);
@@ -57,7 +57,6 @@ function action() {
     if (runCount > 4) {
         clearInterval(actionLoop);
     }
-    console.log(listsNumbersCard)
 }
 
 function randomBox() {
