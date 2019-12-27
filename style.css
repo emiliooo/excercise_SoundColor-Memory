@@ -21,32 +21,36 @@ ul#list_box-card {
     cursor: pointer;
 }
 
-#box_one{
+#boxOne{
     background-color: aqua;
     opacity: 0.2;
 }
 
-#box_two{
+#boxTwo{
     background-color: red;
     opacity: 0.2;
 }
 
-#box_three{
+#boxThree{
     background-color: #9b79bf;
     opacity: 0.2;
 }
 
-#box_four{
+#boxFour{
     background-color: #313940;
     opacity: 0.2;
 }
 
-#box_five{
+#boxFive{
     background-color: #ff006a;
     opacity: 0.2;
 }
 
-#box_six{
+#boxSix{
     background-color: #aed82e;
     opacity: 0.2;
+}
+
+li{
+    cursor: pointer;
 }
